@@ -1,0 +1,11 @@
+.header {
+  grid-area: 1 / 1 / 2 / 5;
+  &__title {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 64px;
+  }
+}

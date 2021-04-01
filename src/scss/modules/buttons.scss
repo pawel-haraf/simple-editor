@@ -1,0 +1,28 @@
+.buttons {
+  grid-area: 8 / 2 / 9 / 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__load {
+    width: 82px;
+    height: 40px;
+    border: 1px #121232 solid;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    background: #FAFAFC;
+    color: #121232;
+  }
+  &__save {
+    width: 82px;
+    height: 40px;
+    border: 1px #121232 solid;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    background: #121232;
+    color: #FAFAFC;
+  }
+}
