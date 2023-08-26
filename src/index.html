@@ -8,10 +8,19 @@
     <title>Simple editor</title>
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Simple editor
-    </h1>
+<body class="flex items-center justify-center gap-4 flex-col w-screen h-screen bg-gray-900">
+    <form class="flex items-center flex-col gap-4 w-9/12  p-4">
+        <label for="textarea" class="self-start text-2xl text-white">
+            My editor
+        </label>
+        <textarea name="textarea" id="textarea" placeholder="Write text here..."
+            class="w-full h-96 bg-gray-700 text-gray-400"></textarea>
+        <div class="flex justify-end gap-16 w-full p-8">
+            <button class="bg-gray-100 text-sky-500 text-xs rounded px-4 py-2">load</button>
+            <button class="bg-gray-900 text-white text-xs border border-white rounded px-4 py-2">save</button>
+        </div>
+    </form>
+    <script defer src="main.js"></script>
 </body>
 
 </html>
