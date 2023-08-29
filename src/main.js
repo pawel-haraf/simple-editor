@@ -14,14 +14,18 @@ load.addEventListener('click', () => {
 	textarea.value = fromStorage
 })
 
+let color = 'green'
+
 check.addEventListener('click', () => {
 	const textLength = textarea.value.length
-	textarea.classList.remove('text-black')
-	if (textLength > 10) {
-		textarea.classList.add('text-green-600')
-		textarea.classList.remove('text-red-600')
+	textarea.classList.remove('text-gray-400')
+	textarea.classList.remove(`text-${color}-500`)
+	if (textLength <= 10) {
+		color = 'red'
+	} else if (textLength > 10 && textLength <= 20) {
+		color = 'blue'
 	} else {
-		textarea.classList.add('text-red-600')
-		textarea.classList.remove('text-green-600')
+		color = 'green'
 	}
+	textarea.classList.add(`text-${color}-500`)
 })
