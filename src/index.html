@@ -13,18 +13,19 @@
 </head>
 
 <body class="flex items-center justify-center gap-4 flex-col w-screen h-screen bg-wtf">
-    <form class="flex items-center flex-col gap-4 w-9/12  p-4">
-        <label for="textarea" class="self-start text-2xl text-[#223344] font-poppins">
+    <main class="flex items-center flex-col gap-4 w-9/12  p-4">
+        <h1 class="self-start text-2xl text-[#223344] font-poppins">
             My editor
-        </label>
-        <textarea name="textarea" id="textarea" placeholder="Write text here..."
+        </h1>
+        <textarea placeholder="Write text here..."
             class="w-full h-96 bg-gray-700 text-gray-400 textarea--js"></textarea>
         <div class="flex justify-end gap-16 w-full p-8">
+            <button class="check--js text-white bg-red-800 px-4 py-2 text-xs rounded">check</button>
             <button class="bg-gray-100 text-sky-500 text-xs rounded px-4 py-2 button-load--js">load</button>
             <button
                 class="bg-gray-900 text-white text-xs border border-white rounded px-4 py-2 button-save--js">save</button>
         </div>
-    </form>
+    </main>
     <script defer src="main.js" type="module"></script>
 </body>
 
